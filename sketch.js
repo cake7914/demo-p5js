@@ -101,7 +101,7 @@ function setup() {
   let snakeCanvas = createCanvas(windowWidth/2, windowHeight/2);
   snakeCanvas.parent("canvas-container");
   frameRate(3);
-  stroke(255);
+  stroke(255,255,255);
   strokeWeight(10);
   updateFruitCoordinates();
 
@@ -116,10 +116,10 @@ function setup() {
 }
 
 function draw() {
-  background('#b1d1fc');
+  background(0,0,0);
   for (let i = 0; i < numSegments - 1; i++) {
     line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
-    stroke('#c1f80a');
+    stroke(255,255,255);
   }
   updateSnakeCoordinates();
   updateHandContainer();
